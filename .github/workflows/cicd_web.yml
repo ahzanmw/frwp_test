@@ -11,7 +11,9 @@ jobs:
         run: |
          sudo apt-get install --yes nodejs
          sudo apt-get install --yes build-essential
-         npm run build
+         npm run build:css && react-scripts build
+         ls -lha
+         pwd
         # --   
       - name: SFTP Deploy
         # You may pin to the exact commit or the version.
