@@ -9,10 +9,8 @@ jobs:
         uses: actions/checkout@v2
       - name: Build
         uses: actions/setup-node@v2.1.2
-      - name: build-packages//npm install
-        run: | 
-          - npm install
-          - ls -lha
+      - name: build-packages----
+        run: - npm install
            
       - name: SFTP Deploy
         # You may pin to the exact commit or the version.
