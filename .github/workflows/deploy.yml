@@ -2,11 +2,9 @@ name: SSH Server Deploy
 on: [push]
 jobs:
   build:
-    name: Build
-    
+    name: Build  
     runs-on: ubuntu-latest
     steps:
-      - id: st1
       - name: Checkout
         uses: actions/checkout@v2
       - name: build-staticsite
