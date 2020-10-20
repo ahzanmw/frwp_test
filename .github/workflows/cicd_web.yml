@@ -10,7 +10,7 @@ jobs:
       - name: Build
         uses: actions/setup-node@v2.1.2
       - name: build-packages----
-        run: - npm install
+        run: npm install
            
       - name: SFTP Deploy
         # You may pin to the exact commit or the version.
