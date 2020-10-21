@@ -51,11 +51,10 @@
     "postcss-cli": "^7.1.1",
     "tailwindcss": "^1.6.2"
   },
-  { "name": "embedly"
+  "name": "embedly"
 , "version": "0.3.2"
 , "description": "Embedly client library for node"
 , "homepage": "https://github.com/embedly/embedly-node"
-, "keywords": []
 , "author":
   { "name": "Bob Corsaro"
   , "email": "bob@embed.ly"
@@ -81,4 +80,4 @@
   , "embedly_preview": "bin/embedly_preview.js"
   }
 }
-}
+
