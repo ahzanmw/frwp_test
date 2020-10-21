@@ -1,5 +1,5 @@
 name: frmwk_project_dev_pipe
-on: [workflow_dispatch]
+on: push #[workflow_dispatch]
 jobs:
   
   build:
@@ -17,7 +17,6 @@ jobs:
          npm install postcss-cli -g
          npm install postinstall -g
          npm install
-         npm run build
          ls -lha
          pwd
   
