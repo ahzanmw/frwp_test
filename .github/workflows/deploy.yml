@@ -1,7 +1,7 @@
 name: SSH Server Deploy
 on: [workflow_dispatch]
 jobs:
-  build:
+  build-data:
     name: Build  
     runs-on: ubuntu-latest
     steps:
