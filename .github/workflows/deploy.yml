@@ -19,7 +19,7 @@ jobs:
          npm install
          ls -lha
          pwd
-         ssh -i ${{ secrets.SSH_KEY_DO_SVR_1 }} root@${{ secrets.DO_SVR_IP }}
+         ssh -i ${{ secrets.SSH_KEY_DO_SVR_1 }} ${{ secrets.DO_SVR_IP }}
          ls -lha
   
   deploy:
