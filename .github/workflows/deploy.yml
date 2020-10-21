@@ -14,9 +14,11 @@ jobs:
           node_version: 12
       - name: npm install
         run: |
+         ls -lha
+         echo '-------------------NPM INSTALL----------------------------'
          npm install
+         echo '-------------------NPM INSTALL Done----------------------------'
          npm run build
-         npm run build:css && react-scripts build
          ls -lha
          pwd
   
