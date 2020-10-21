@@ -12,11 +12,11 @@ jobs:
         uses: actions/setup-node@v2.1.2
         with:
           node-version: 12
-      - name: npm install
+      - name: npm install and build
         run: |
+         npm install postcss-cli
          ls -lha
          pwd
-         npm run build
          echo '-------------------NPM INSTALL----------------------------'
          npm install
          echo '-------------------NPM INSTALL Done----------------------------'
