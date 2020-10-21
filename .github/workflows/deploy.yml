@@ -16,11 +16,10 @@ jobs:
         run: |
          npm install postcss-cli -g
          npm install postinstall -g
-         npm install
+         npm install -g
+         npm run build
          ls -lha
          pwd
-         ssh -i ${{ secrets.SSH_KEY_DO_SVR_1 }} ${{ secrets.DO_SVR_IP }}
-         ls -lha
   
   deploy:
     name: deploy web
