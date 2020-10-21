@@ -1,6 +1,7 @@
-name: SSH Server Deploy
+name: frmwk_project_dev_pipe
 on: [workflow_dispatch]
 jobs:
+  
   build:
     name: Clone and Build  
     runs-on: ubuntu-latest
@@ -11,8 +12,9 @@ jobs:
         run: |
          ls -lha
          pwd
+  
   deploy:
-    name: deploy artifacts
+    name: deploy web
     runs-on: ubuntu-latest
     steps:
       - name: SFTP Deploy
