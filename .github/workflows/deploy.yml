@@ -1,7 +1,5 @@
 name: SSH Server Deploy
-on:
-  workflow_dispatch:
-    branches: main
+on: [workflow_dispatch]
 jobs:
   build:
     name: Build  
