@@ -14,12 +14,8 @@ jobs:
           node-version: 12
       - name: npm install and build
         run: |
-         npm install postcss-cli
+         npm install postcss-cli -g
          ls -lha
-         pwd
-         echo '-------------------NPM INSTALL----------------------------'
-         npm install
-         echo '-------------------NPM INSTALL Done----------------------------'
          npm run build
          ls -lha
          pwd
