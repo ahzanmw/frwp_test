@@ -1,8 +1,8 @@
 name: SSH Server Deploy
 on: [workflow_dispatch]
 jobs:
-  build-data:
-    name: Build  
+  build:
+    name: Clone and Build  
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -10,7 +10,11 @@ jobs:
       - name: build-staticsite
         run: |
          ls -lha
-         pwd 
+         pwd
+  deploy:
+    name: deploy artifacts
+    runs-on: ubuntu-latest
+    steps:
       - name: SFTP Deploy
         uses: wlixcc/SFTP-Deploy-Action@v1.0
         with:
@@ -23,7 +27,8 @@ jobs:
           # you can copy private_key from your *.pem file, keep format
           ssh_private_key: ${{ secrets.SSH_KEY_DO_SVR_1 }}
           # will put all file under this path
-          local_path: ./build/*
+          local_path: ./*
           # files will copy to under remote_path
           remote_path: /root/static/
-          # sftp args
+          # sftp args 
+      
