@@ -11,10 +11,12 @@ jobs:
       - name: Setup Node.js environment
         uses: actions/setup-node@v2.1.2
         with:
-          node_version: 12
+          node-version: 12
       - name: npm install
         run: |
          ls -lha
+         pwd
+         npm run build
          echo '-------------------NPM INSTALL----------------------------'
          npm install
          echo '-------------------NPM INSTALL Done----------------------------'
